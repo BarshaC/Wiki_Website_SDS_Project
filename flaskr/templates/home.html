@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title> Home </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body style="text-align: center">
+    <ul class="nav-bar">
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="/upload">Upload</a>
+        <a href="/pages">Pages</a>
+        <a href="/logout">Logout</a>
+      </ul>
+
+    <h1> Hi, {{data}}</h1>
+    <div style="background-color:powderblue;">
+        <div>       
+            Here you will find the best TV shows on Netflix, ranked and with a synopsis of each show.
+        </div>
+    </div>
+</body>
+</html>

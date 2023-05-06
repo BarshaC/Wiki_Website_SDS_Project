@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block title %}Best Netflix TV Shows{% endblock %}
+{% block content %}
+        <h1>Best Netflix Series</h1>
+            {% for page in pages %}
+            <div><a href="{{url_for('parametrized_pages', filename=page)}}">{{page}}</a></div>
+            {% endfor %}
+{%endblock%}
